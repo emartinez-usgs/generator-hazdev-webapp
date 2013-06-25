@@ -106,4 +106,5 @@ HazdevWebappGenerator.prototype.staticfiles = function staticfiles () {
 	this.copy('gitignore', '.gitignore');
 	this.copy('jshintrc', '.jshintrc');
 	this.copy('Gruntfile.js', 'Gruntfile.js');
+	this.copy('index.html', 'src/htdocs/index.html');
 };

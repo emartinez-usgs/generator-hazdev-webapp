@@ -30,7 +30,8 @@ describe('hazdev-webapp generator', function () {
 			'.gitattributes',
 			'.gitignore',
 			'.jshintrc',
-			'Gruntfile.js'
+			'Gruntfile.js',
+			'src/htdocs/index.html'
 		];
 
 		helpers.mockPrompt(this.app, {
