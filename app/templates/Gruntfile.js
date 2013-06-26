@@ -235,7 +235,7 @@ module.exports = function (grunt) {
 			},
 			lib: {
 				expand: true,
-				cwd: '<%= app.src  %>/lib',
+				cwd: '<%= app.src %>/lib',
 				dest: '<%= app.dist %>/lib',
 				src: [
 					'**/*'

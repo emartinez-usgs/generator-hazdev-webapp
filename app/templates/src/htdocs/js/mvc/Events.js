@@ -18,7 +18,7 @@ define([], function() {
 	/**
 	 * Add an event listener
 	 *
-	 * @param evt {String} event name (singular).  E.g. "reset"
+	 * @param evt {String} event name (singular). E.g. "reset"
 	 * @param callback {Function} function to call when event is triggered.
 	 * @param context {Object} context for "this" when callback is called.
 	 */

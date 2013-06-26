@@ -12,7 +12,7 @@ define([
 	/**
 	 * Constructor.
 	 *
-	 * @param  data {Object} key/value attributes of this model.
+	 * @param data {Object} key/value attributes of this model.
 	 */
 	var Model = function(data) {
 		this._model = Util.extend({}, data);
@@ -33,7 +33,7 @@ define([
 	 *
 	 * @param data {Object} the keys and values to update.
 	 * @param options {Object} options for this method.
-	 * @param options.silent {Boolean} default false.  true to suppress any
+	 * @param options.silent {Boolean} default false. true to suppress any
 	 *                       events that would otherwise be triggered.
 	 */
 	Model.prototype.set = function(data, options) {

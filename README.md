@@ -3,7 +3,8 @@ Generator-hazdev-webapp
 
 [![Build Status](https://secure.travis-ci.org/emartinez-usgs/generator-hazdev-webapp.png?branch=master)](https://travis-ci.org/emartinez-usgs/generator-hazdev-webapp)
 
-A generator for Yeoman.
+A web application generator for Yeoman used by the USGS Earthquake Hazards
+Program "HazDev" team.
 
 Getting started
 ---------------
@@ -12,6 +13,8 @@ Getting started
 	`npm install -g yo`
 - Install the generator: `npm install -g generator-hazdev-webapp`
 - Run: `yo hazdev-webapp`
+
+TODO :: Update getting started to be more clear/complete.
 
 Road Map
 --------

@@ -14,7 +14,7 @@ define(
 		/**
 		 * Create a new Collection.
 		 *
-		 * @param data {Array} of data.  When omitted a new array is created.
+		 * @param data {Array} of data. When omitted a new array is created.
 		 */
 		var Collection = function(data) {
 			// add event handling to collection
@@ -173,7 +173,7 @@ define(
 		};
 
 		/**
-		 * Free the array and id cache.  Calls deselect before clearing data.
+		 * Free the array and id cache. Calls deselect before clearing data.
 		 */
 		Collection.prototype.destroy = function() {
 			this.deselect();

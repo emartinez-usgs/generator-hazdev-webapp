@@ -21,7 +21,7 @@ define([
 
 	/**
 	 * A callback function that tracks last callback.
-	 * @param  data {Object} the callback data.
+	 * @param data {Object} the callback data.
 	 */
 	TestClass.prototype.callback = function(data) {
 		this.callbackCount++;
