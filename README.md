@@ -1,4 +1,4 @@
-Generator-hazdev-webapp
+generator-hazdev-webapp
 =======================
 
 [![Build Status](https://secure.travis-ci.org/emartinez-usgs/generator-hazdev-webapp.png?branch=master)](https://travis-ci.org/emartinez-usgs/generator-hazdev-webapp)
