@@ -124,6 +124,7 @@ HazdevWebappGenerator.prototype.staticfiles = function staticfiles () {
 	this.copy('src/conf/config.ini.orig', 'src/conf/config.ini.orig');
 
 	this.copy('src/htdocs/css/index.scss', 'src/htdocs/css/index.scss');
+	this.copy('src/htdocs/favicon.ico', 'src/htdocs/favicon.ico');
 	this.copy('src/htdocs/index.html', 'src/htdocs/index.html');
 	this.copy('src/htdocs/js/index.js', 'src/htdocs/js/index.js');
 	this.copy('src/htdocs/js/mvc/Collection.js',
@@ -137,6 +138,7 @@ HazdevWebappGenerator.prototype.staticfiles = function staticfiles () {
 
 
 	// Files for testing
+	this.copy('src/htdocs/favicon.ico', 'test/favicon.ico');
 	this.copy('test/index.html', 'test/index.html');
 	this.copy('test/index.js', 'test/index.js');
 

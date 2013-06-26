@@ -35,6 +35,7 @@ describe('hazdev-webapp generator', function () {
 			'src/conf/config.ini.orig',
 
 			'src/htdocs/css/index.scss',
+			'src/htdocs/favicon.ico',
 			'src/htdocs/index.html',
 			'src/htdocs/js/index.js',
 			'src/htdocs/js/mvc/Collection.js',
@@ -45,6 +46,7 @@ describe('hazdev-webapp generator', function () {
 			'src/lib/pre-install',
 			'src/lib/uninstall',
 
+			'test/favicon.ico',
 			'test/index.html',
 			'test/index.js',
 			'test/spec/mvc/CollectionTest.js',
