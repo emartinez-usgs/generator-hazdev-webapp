@@ -68,6 +68,11 @@ module.exports = function (grunt) {
 		concurrent: {
 			scripts: ['jshint:scripts', 'mocha_phantomjs'],
 			tests: ['jshint:tests', 'mocha_phantomjs'],
+			predist: [
+				'jshint:scripts',
+				'jshint:tests',
+				'compass'
+			],
 			dist: [
 				'requirejs:dist',
 				'cssmin:dist',
@@ -286,7 +291,7 @@ module.exports = function (grunt) {
 
 	grunt.registerTask('build', [
 		'clean:dist',
-		'compass',
+		'concurrent:predist',
 		'concurrent:dist',
 		'replace',
 		'open:dist',

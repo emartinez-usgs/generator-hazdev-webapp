@@ -5,14 +5,16 @@ var yeoman = require('yeoman-generator');
 var _ = require('underscore.string');
 
 
-var HazdevWebappGenerator = module.exports = function HazdevWebappGenerator (args, options, config) {
+var HazdevWebappGenerator = module.exports = function HazdevWebappGenerator (
+		args, options, config) {
 	yeoman.generators.Base.apply(this, arguments);
 
 	this.on('end', function () {
 		this.installDependencies({ skipInstall: options['skip-install'] });
 	});
 
-	this.pkg = JSON.parse(this.readFileAsString(path.join(__dirname, '../package.json')));
+	this.pkg = JSON.parse(this.readFileAsString(path.join(__dirname,
+			'../package.json')));
 };
 
 util.inherits(HazdevWebappGenerator, yeoman.generators.Base);
@@ -89,22 +91,58 @@ HazdevWebappGenerator.prototype.directories = function directories () {
 	this.mkdir('src/htdocs');
 	this.mkdir('src/conf');
 	this.mkdir('src/lib');
+
+	this.mkdir('test');
+	this.mkdir('test/spec');
+	this.mkdir('test/spec/mvc');
 };
 
 HazdevWebappGenerator.prototype.templatefiles = function templatefiles () {
+
+	// Templates for project setup
 	this.template('_package.json', 'package.json');
 	this.template('_README.md', 'README.md');
 	this.copy('_bower.json', 'bower.json');
 	this.template('_projectfile.sublime-project', 
 			_.slugify(this.appName) + '.sublime-project');
+
 };
 
 HazdevWebappGenerator.prototype.staticfiles = function staticfiles () {
+
+	// Files for project setup
 	this.copy('bowerrc', '.bowerrc');
 	this.copy('editorconfig', '.editorconfig');
 	this.copy('gitattributes', '.gitattributes');
 	this.copy('gitignore', '.gitignore');
 	this.copy('jshintrc', '.jshintrc');
+	this.copy('travis.yml', '.travis.yml');
 	this.copy('Gruntfile.js', 'Gruntfile.js');
-	this.copy('index.html', 'src/htdocs/index.html');
+
+
+	// Files for initial application skeleton
+	this.copy('src/conf/config.ini.orig', 'src/conf/config.ini.orig');
+
+	this.copy('src/htdocs/css/index.scss', 'src/htdocs/css/index.scss');
+	this.copy('src/htdocs/index.html', 'src/htdocs/index.html');
+	this.copy('src/htdocs/js/index.js', 'src/htdocs/js/index.js');
+	this.copy('src/htdocs/js/mvc/Collection.js',
+			'src/htdocs/js/mvc/Collection.js');
+	this.copy('src/htdocs/js/mvc/Events.js', 'src/htdocs/js/mvc/Events.js');
+	this.copy('src/htdocs/js/mvc/Model.js', 'src/htdocs/js/mvc/Model.js');
+	this.copy('src/htdocs/js/mvc/Util.js', 'src/htdocs/js/mvc/Util.js');
+
+	this.copy('src/lib/pre-install', 'src/lib/pre-install');
+	this.copy('src/lib/uninstall', 'src/lib/uninstall');
+
+
+	// Files for testing
+	this.copy('test/index.html', 'test/index.html');
+	this.copy('test/index.js', 'test/index.js');
+
+	this.copy('test/spec/mvc/CollectionTest.js',
+			'test/spec/mvc/CollectionTest.js');
+	this.copy('test/spec/mvc/EventsTest.js', 'test/spec/mvc/EventsTest.js');
+	this.copy('test/spec/mvc/ModelTest.js', 'test/spec/mvc/ModelTest.js');
+	this.copy('test/spec/mvc/UtilTest.js', 'test/spec/mvc/UtilTest.js');
 };

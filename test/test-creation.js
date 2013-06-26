@@ -31,7 +31,26 @@ describe('hazdev-webapp generator', function () {
 			'.gitignore',
 			'.jshintrc',
 			'Gruntfile.js',
-			'src/htdocs/index.html'
+
+			'src/conf/config.ini.orig',
+
+			'src/htdocs/css/index.scss',
+			'src/htdocs/index.html',
+			'src/htdocs/js/index.js',
+			'src/htdocs/js/mvc/Collection.js',
+			'src/htdocs/js/mvc/Events.js',
+			'src/htdocs/js/mvc/Model.js',
+			'src/htdocs/js/mvc/Util.js',
+
+			'src/lib/pre-install',
+			'src/lib/uninstall',
+
+			'test/index.html',
+			'test/index.js',
+			'test/spec/mvc/CollectionTest.js',
+			'test/spec/mvc/EventsTest.js',
+			'test/spec/mvc/ModelTest.js',
+			'test/spec/mvc/UtilTest.js'
 		];
 
 		helpers.mockPrompt(this.app, {

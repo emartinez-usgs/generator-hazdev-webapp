@@ -6,6 +6,9 @@
 	"keywords": [
 		"usgs"
 	],
+	"scripts": {
+		"test": "grunt test"
+	},
 	"dependencies": {},
 	"devDependencies": {
 		"chai": "~1.7.0",
