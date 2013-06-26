@@ -13,6 +13,20 @@ Getting started
 - Install the generator: `npm install -g generator-hazdev-webapp`
 - Run: `yo hazdev-webapp`
 
+Road Map
+--------
+
+Here are the list of things to be done on this generator. They will probably
+only be implemented as needed unless there is copious amounts of free time made
+available.
+
+	1. Make RequireJS an optional addition to the generated application.
+	2. Add support for optionally including Leaflet for generating application
+	   scaffolding that require interactive maps.
+	3. Update default set of tests in generate application to be more
+	   comprehensive.
+	4. Add testing coverage reports etc... for generated application.
+
 License
 -------
 
