@@ -43,7 +43,7 @@ module.exports = function (grunt) {
 			},
 			scss: {
 				files: ['<%= app.src %>/htdocs/css/**/*.scss'],
-				tasks: ['compass:src']
+				tasks: ['compass:dev']
 			},
 			tests: {
 				files: ['<%= app.test %>/*.html', '<%= app.test %>/**/*.js'],
