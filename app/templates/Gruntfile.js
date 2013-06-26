@@ -262,7 +262,7 @@ module.exports = function (grunt) {
 			}
 		},
 		open: {
-			server: {
+			dev: {
 				path: 'http://localhost:<%= connect.dev.options.port %>'
 			},
 			test: {
@@ -302,9 +302,9 @@ module.exports = function (grunt) {
 		'clean:dist',
 		'compass:dev',
 		'connect:test',
-		'open:test',
 		'connect:dev',
-		'open:server',
+		'open:test',
+		'open:dev',
 		'watch'
 	]);
 
