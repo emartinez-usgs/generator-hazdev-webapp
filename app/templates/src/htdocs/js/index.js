@@ -7,7 +7,8 @@ require.config({
 });
 
 require([
-], function () {
+], function (
+) {
 	'use strict';
 	console.log('Framework Loaded');
 });

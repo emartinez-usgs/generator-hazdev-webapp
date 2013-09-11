@@ -17,18 +17,18 @@ require.config({
 
 require([
 	'mocha',
-], function (mocha) {
+], function (
+	mocha
+) {
+	'use strict';
+
 	mocha.setup('bdd');
 
 	// Add each test class here as they are implemented
 	require([
-		'spec/mvc/CollectionTest',
-		'spec/mvc/EventsTest',
-		'spec/mvc/ModelTest',
-		'spec/mvc/UtilTest'
 	], function () {
 		if (window.mochaPhantomJS) {
-			mochaPhantomJS.run();
+			window.mochaPhantomJS.run();
 		} else {
 			mocha.run();
 		}
