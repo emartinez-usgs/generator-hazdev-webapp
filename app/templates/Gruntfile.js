@@ -137,7 +137,7 @@ module.exports = function (grunt) {
 			},
 			gruntfile: ['Gruntfile.js'],
 			scripts: ['<%= app.src %>/htdocs/js/**/*.js'],
-			tests: ['<%= app.test %>/spec/**/*.js']
+			tests: ['<%= app.test %>/**/*.js']
 		},
 		compass: {
 			dev: {
