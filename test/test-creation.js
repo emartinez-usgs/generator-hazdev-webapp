@@ -1,8 +1,8 @@
 /*global describe, beforeEach, it*/
 'use strict';
 
-var path		= require('path');
-var helpers = require('yeoman-generator').test;
+var path = require('path'),
+    helpers = require('yeoman-generator').test;
 
 
 describe('hazdev-webapp generator', function () {
@@ -38,21 +38,13 @@ describe('hazdev-webapp generator', function () {
 			'src/htdocs/favicon.ico',
 			'src/htdocs/index.html',
 			'src/htdocs/js/index.js',
-			'src/htdocs/js/mvc/Collection.js',
-			'src/htdocs/js/mvc/Events.js',
-			'src/htdocs/js/mvc/Model.js',
-			'src/htdocs/js/mvc/Util.js',
 
 			'src/lib/pre-install',
 			'src/lib/uninstall',
 
 			'test/favicon.ico',
 			'test/index.html',
-			'test/index.js',
-			'test/spec/mvc/CollectionTest.js',
-			'test/spec/mvc/EventsTest.js',
-			'test/spec/mvc/ModelTest.js',
-			'test/spec/mvc/UtilTest.js'
+			'test/index.js'
 		];
 
 		helpers.mockPrompt(this.app, {
