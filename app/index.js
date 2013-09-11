@@ -68,7 +68,7 @@ HazdevWebappGenerator.prototype.askForMore = function askForMore () {
 			default: 'https://github.com/usgs/' + _.slugify(this.appName) + '.git'
 		});
 	} else {
-		this.appRepo = '';
+		this.appRepoInfo = '';
 	}
 
 	if (prompts.length > 0) {
@@ -77,9 +77,10 @@ HazdevWebappGenerator.prototype.askForMore = function askForMore () {
 
 			var appRepo = {
 				type: 'git',
-				url: props.appRepo
+				url: '' + props.appRepo
 			};
-			this.appRepo = JSON.stringify(appRepo);
+			this.appRepoInfo = "\n\t\"repository\": " +
+					JSON.stringify(appRepo) + ',';
 
 			cb();
 		}.bind(this));
