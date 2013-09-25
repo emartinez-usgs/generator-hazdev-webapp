@@ -1,6 +1,6 @@
 {
 	"name": "generator-hazdev-webapp",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"description": "A generator for Yeoman used by the USGS EHP HazDev team.",
 	"keywords": [
 		"yeoman-generator",
