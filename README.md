@@ -33,4 +33,4 @@ available.
 License
 -------
 
-See: [LICENSE.md](LICESE.md)
+See: [LICENSE.md](LICENSE.md)
