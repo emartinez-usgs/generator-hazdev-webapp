@@ -10,7 +10,7 @@ Getting started
 ---------------
 
 - Make sure you have [yo](https://github.com/yeoman/yo) installed:
-	`npm install -g yo`
+  `npm install -g yo`
 - Install the generator: `npm install -g generator-hazdev-webapp`
 - Run: `yo hazdev-webapp`
 
