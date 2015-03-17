@@ -1,16 +1,21 @@
 'use strict';
 
 var concurrent = {
-  build: [
+  dev: [
     'browserify:index',
-    'copy:build',
-    'compass:build'
+    'copy:dev',
+    'compass:dev'
   ],
 
   dist: [
     'copy:dist',
     'uglify',
     'cssmin'
+  ],
+
+  test: [
+    'browserify:test',
+    'copy:test'
   ]
 };
 
