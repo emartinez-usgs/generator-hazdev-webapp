@@ -3,7 +3,7 @@
 var config = require('./config');
 
 var copy = {
-  build: {
+  dev: {
     cwd: config.src,
     dest: config.build + '/' + config.src,
     expand: true,

@@ -3,9 +3,9 @@
 var gruntConfig = {
 
   browserify: require('./browserify'),
-  concurrent: require('./concurrent'),
   clean: require('./clean'),
   compass: require('./compass'),
+  concurrent: require('./concurrent'),
   connect: require('./connect'),
   copy: require('./copy'),
   cssmin: require('./cssmin'),
