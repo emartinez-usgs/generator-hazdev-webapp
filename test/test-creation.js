@@ -23,20 +23,30 @@ describe('hazdev-webapp generator', function () {
     var expected = [
       'package.json',
       'README.md',
-      'bower.json',
-      'test-app.sublime-project',
-      '.bowerrc',
-      '.editorconfig',
+
+      'gruntconfig/browserify.js',
+      'gruntconfig/clean.js',
+      'gruntconfig/compass.js',
+      'gruntconfig/concurrent.js',
+      'gruntconfig/config.js',
+      'gruntconfig/connect.js',
+      'gruntconfig/copy.js',
+      'gruntconfig/cssmin.js',
+      'gruntconfig/index.js',
+      'gruntconfig/jshint.js',
+      'gruntconfig/uglify.js',
+      'gruntconfig/watch.js',
+
       '.gitattributes',
       '.gitignore',
       '.jshintrc',
-      'Gruntfile.js',
+      '.travis.yml',
 
-      'src/conf/config.ini.orig',
+      'Gruntfile.js',
 
       'src/htdocs/css/index.scss',
       'src/htdocs/favicon.ico',
-      'src/htdocs/index.html',
+      'src/htdocs/index.php',
       'src/htdocs/js/index.js',
 
       'src/lib/pre-install',

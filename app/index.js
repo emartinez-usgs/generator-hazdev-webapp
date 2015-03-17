@@ -88,6 +88,8 @@ HazdevWebappGenerator.prototype.askForMore = function askForMore () {
 };
 
 HazdevWebappGenerator.prototype.directories = function directories () {
+  this.mkdir('gruntconfig');
+
   this.mkdir('src');
   this.mkdir('src/htdocs');
   this.mkdir('src/conf');
@@ -102,17 +104,24 @@ HazdevWebappGenerator.prototype.templatefiles = function templatefiles () {
   // Templates for project setup
   this.template('_package.json', 'package.json');
   this.template('_README.md', 'README.md');
-  this.copy('_bower.json', 'bower.json');
-  this.template('_projectfile.sublime-project',
-      _.slugify(this.appName) + '.sublime-project');
 
 };
 
 HazdevWebappGenerator.prototype.staticfiles = function staticfiles () {
-
   // Files for project setup
-  this.copy('bowerrc', '.bowerrc');
-  this.copy('editorconfig', '.editorconfig');
+  this.copy('gruntconfig/browserify.js', 'gruntconfig/browserify.js');
+  this.copy('gruntconfig/clean.js', 'gruntconfig/clean.js');
+  this.copy('gruntconfig/compass.js', 'gruntconfig/compass.js');
+  this.copy('gruntconfig/concurrent.js', 'gruntconfig/concurrent.js');
+  this.copy('gruntconfig/config.js', 'gruntconfig/config.js');
+  this.copy('gruntconfig/connect.js', 'gruntconfig/connect.js');
+  this.copy('gruntconfig/copy.js', 'gruntconfig/copy.js');
+  this.copy('gruntconfig/cssmin.js', 'gruntconfig/cssmin.js');
+  this.copy('gruntconfig/index.js', 'gruntconfig/index.js');
+  this.copy('gruntconfig/jshint.js', 'gruntconfig/jshint.js');
+  this.copy('gruntconfig/uglify.js', 'gruntconfig/uglify.js');
+  this.copy('gruntconfig/watch.js', 'gruntconfig/watch.js');
+
   this.copy('gitattributes', '.gitattributes');
   this.copy('gitignore', '.gitignore');
   this.copy('jshintrc', '.jshintrc');
@@ -125,7 +134,7 @@ HazdevWebappGenerator.prototype.staticfiles = function staticfiles () {
 
   this.copy('src/htdocs/css/index.scss', 'src/htdocs/css/index.scss');
   this.copy('src/htdocs/favicon.ico', 'src/htdocs/favicon.ico');
-  this.copy('src/htdocs/index.html', 'src/htdocs/index.html');
+  this.copy('src/htdocs/index.php', 'src/htdocs/index.php');
   this.copy('src/htdocs/js/index.js', 'src/htdocs/js/index.js');
 
   this.copy('src/lib/pre-install', 'src/lib/pre-install');
@@ -133,7 +142,6 @@ HazdevWebappGenerator.prototype.staticfiles = function staticfiles () {
 
 
   // Files for testing
-  this.copy('src/htdocs/favicon.ico', 'test/favicon.ico');
   this.copy('test/index.html', 'test/index.html');
   this.copy('test/index.js', 'test/index.js');
 };
