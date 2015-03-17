@@ -137,7 +137,10 @@ HazdevWebappGenerator.prototype.staticfiles = function staticfiles () {
   this.copy('src/htdocs/index.php', 'src/htdocs/index.php');
   this.copy('src/htdocs/js/index.js', 'src/htdocs/js/index.js');
 
+  this.copy('src/lib/configure.php', 'src/lib/configure.php');
+  this.copy('src/lib/install-funcs.php','src/lib/install-funcs.php');
   this.copy('src/lib/pre-install', 'src/lib/pre-install');
+  this.copy('src/lib/pre-install.php','src/lib/pre-install.php');
   this.copy('src/lib/uninstall', 'src/lib/uninstall');
 
 
