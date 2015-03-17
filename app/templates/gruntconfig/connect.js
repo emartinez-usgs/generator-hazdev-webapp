@@ -80,6 +80,14 @@ var connect = {
     }
   },
 
+  test: {
+    options: {
+      base: [config.build + '/' + config.test],
+      open: 'http://localhost:' + config.testPort + '/test.html',
+      port: config.testPort
+    }
+  },
+
 
   template: {
     options: {
