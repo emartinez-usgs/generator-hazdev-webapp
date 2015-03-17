@@ -18,6 +18,7 @@ if (!isset($TEMPLATE)) {
 
   include_once 'template.inc.php';
 }
+?>
 
 <p>
   Page Content. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
