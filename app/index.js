@@ -130,7 +130,7 @@ HazdevWebappGenerator.prototype.staticfiles = function staticfiles () {
 
 
   // Files for initial application skeleton
-  this.copy('src/conf/config.ini.orig', 'src/conf/config.ini.orig');
+  this.copy('src/conf/config.inc.php', 'src/conf/config.inc.php');
 
   this.copy('src/htdocs/css/index.scss', 'src/htdocs/css/index.scss');
   this.copy('src/htdocs/favicon.ico', 'src/htdocs/favicon.ico');
