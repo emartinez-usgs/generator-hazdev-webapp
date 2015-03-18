@@ -24,7 +24,8 @@ var gruntConfig = {
     'grunt-contrib-cssmin',
     'grunt-contrib-jshint',
     'grunt-contrib-uglify',
-    'grunt-contrib-watch'
+    'grunt-contrib-watch',
+    'grunt-mocha-phantomjs'
   ]
 };
 
