@@ -15,10 +15,19 @@ var rewrites = [
   }
 ];
 
+var corsMiddleware = function (req, res, next) {
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Methods', '*');
+  res.setHeader('Access-Control-Allow-Headers',
+      'accept,origin,authorization,content-type');
+  return next();
+};
+
 var addMiddleware = function (connect, options, middlewares) {
   middlewares.unshift(
     require('grunt-connect-proxy/lib/utils').proxyRequest,
     require('http-rewrite-middleware').getMiddleware(rewrites),
+    corsMiddleware,
     require('gateway')(options.base[0], {
       '.php': 'php-cgi',
       'env': {
@@ -82,7 +91,10 @@ var connect = {
 
   test: {
     options: {
-      base: [config.build + '/' + config.test],
+      base: [
+        config.build + '/' + config.test,
+        'node_modules' // primarily for mocha/chai
+      ],
       open: 'http://localhost:' + config.testPort + '/test.html',
       port: config.testPort
     }
