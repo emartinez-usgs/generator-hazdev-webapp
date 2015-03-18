@@ -10,6 +10,7 @@ var gruntConfig = {
   copy: require('./copy'),
   cssmin: require('./cssmin'),
   jshint: require('./jshint'),
+  mocha_phantomjs: require('./mocha_phantomjs'),
   uglify: require('./uglify'),
   watch: require('./watch'),
 

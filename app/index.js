@@ -119,6 +119,7 @@ HazdevWebappGenerator.prototype.staticfiles = function staticfiles () {
   this.copy('gruntconfig/cssmin.js', 'gruntconfig/cssmin.js');
   this.copy('gruntconfig/index.js', 'gruntconfig/index.js');
   this.copy('gruntconfig/jshint.js', 'gruntconfig/jshint.js');
+  this.copy('gruntconfig/mocha_phantomjs.js','gruntconfig/mocha_phantomjs.js');
   this.copy('gruntconfig/uglify.js', 'gruntconfig/uglify.js');
   this.copy('gruntconfig/watch.js', 'gruntconfig/watch.js');
 
