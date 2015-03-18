@@ -145,6 +145,6 @@ HazdevWebappGenerator.prototype.staticfiles = function staticfiles () {
 
 
   // Files for testing
-  this.copy('test/index.html', 'test/index.html');
-  this.copy('test/index.js', 'test/index.js');
+  this.copy('test/test.html', 'test/test.html');
+  this.copy('test/test.js', 'test/test.js');
 };
