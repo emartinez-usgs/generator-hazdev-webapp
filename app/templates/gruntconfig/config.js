@@ -4,6 +4,7 @@ var config = {
   src: 'src',
   build: '.build',
   buildPort: 8000,
+  dataPort: 8007,
   dist: 'dist',
   distPort: 8003,
   liveReloadPort: 8009,
