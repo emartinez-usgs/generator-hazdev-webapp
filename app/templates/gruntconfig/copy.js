@@ -29,6 +29,15 @@ var copy = {
 
       'lib/**/*'
     ]
+  },
+
+  test: {
+    cwd: config.test,
+    dest: config.build + '/' + config.test,
+    expand: true,
+    src: [
+      'test.html'
+    ]
   }
 };
 
