@@ -21,6 +21,11 @@ describe('hazdev-webapp generator', function () {
 
   it('creates expected files', function (done) {
     var expected = [
+      '.gitattributes',
+      '.gitignore',
+      '.jshintrc',
+      '.travis.yml',
+      'Gruntfile.js',
       'package.json',
       'README.md',
 
@@ -34,28 +39,25 @@ describe('hazdev-webapp generator', function () {
       'gruntconfig/cssmin.js',
       'gruntconfig/index.js',
       'gruntconfig/jshint.js',
+      'gruntconfig/mocha_phantomjs',
       'gruntconfig/uglify.js',
       'gruntconfig/watch.js',
 
-      '.gitattributes',
-      '.gitignore',
-      '.jshintrc',
-      '.travis.yml',
-
-      'Gruntfile.js',
-
+      'src/htdocs/css/index.scss',
+      'src/htdocs/js/index.js',
       'src/htdocs/_config.inc.php',
       'src/htdocs/_navigation.inc.php',
-      'src/htdocs/css/index.scss',
       'src/htdocs/favicon.ico',
       'src/htdocs/index.php',
-      'src/htdocs/js/index.js',
 
+      'src/lib/configure.php',
+      'src/lib/install-funcs.inc.php',
       'src/lib/pre-install',
+      'src/lib/pre-install.php',
       'src/lib/uninstall',
 
-      'test/test.html',
       'test/js/test.js'
+      'test/test.html',
     ];
 
     helpers.mockPrompt(this.app, {
