@@ -56,7 +56,7 @@ describe('hazdev-webapp generator', function () {
       'src/lib/pre-install.php',
       'src/lib/uninstall',
 
-      'test/js/test.js'
+      'test/js/test.js',
       'test/test.html',
     ];
 
