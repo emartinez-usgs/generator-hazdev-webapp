@@ -54,13 +54,7 @@ var connect = {
       }
     },
     {
-      context: iniConfig.MOUNT_PATH + '/data/pdf',
-      host: 'localhost',
-      port: config.dataPort,
-      rewrite: dataProxyRewrite
-    },
-    {
-      context: iniConfig.MOUNT_PATH + '/data/txt',
+      context: iniConfig.MOUNT_PATH + '/data',
       host: 'localhost',
       port: config.dataPort,
       rewrite: dataProxyRewrite
@@ -100,6 +94,13 @@ var connect = {
     }
   },
 
+
+  data: {
+    options: {
+      base: [iniConfig.DATA_DIR],
+      port: config.dataPort
+    }
+  },
 
   template: {
     options: {

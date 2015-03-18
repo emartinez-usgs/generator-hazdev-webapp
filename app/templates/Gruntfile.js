@@ -23,6 +23,8 @@ module.exports = function (grunt) {
     'test',
 
     'configureProxies:dev',
+    'connect:data',
+    'connect:template',
     'connect:dev',
 
     'watch'
