@@ -68,7 +68,7 @@ var connect = {
   ],
 
 
-  build: {
+  dev: {
     options: {
       base: [config.build + '/' + config.src + '/htdocs'],
       livereload: config.liveReloadPort,
