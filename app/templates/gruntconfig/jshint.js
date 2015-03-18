@@ -12,8 +12,12 @@ var jshint = {
     'gruntconfig/**/*.js'
   ],
 
-  scripts: [
+  dev: [
     config.src + '/htdocs/**/*.js'
+  ],
+
+  test: [
+    config.test + '/**/*.js'
   ]
 };
 
