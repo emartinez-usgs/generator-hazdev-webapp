@@ -39,7 +39,7 @@ describe('hazdev-webapp generator', function () {
       'gruntconfig/cssmin.js',
       'gruntconfig/index.js',
       'gruntconfig/jshint.js',
-      'gruntconfig/mocha_phantomjs',
+      'gruntconfig/mocha_phantomjs.js',
       'gruntconfig/uglify.js',
       'gruntconfig/watch.js',
 
