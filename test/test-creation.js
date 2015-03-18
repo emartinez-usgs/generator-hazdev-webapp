@@ -44,6 +44,7 @@ describe('hazdev-webapp generator', function () {
 
       'Gruntfile.js',
 
+      'src/htdocs/_config.inc.php',
       'src/htdocs/css/index.scss',
       'src/htdocs/favicon.ico',
       'src/htdocs/index.php',
