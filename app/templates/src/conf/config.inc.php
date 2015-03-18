@@ -2,7 +2,7 @@
 
 date_default_timezone_set('UTC');
 
-$CONFIG = parse_init_file('config.ini');
+$CONFIG = parse_ini_file('config.ini');
 
 $APP_DIR = $CONFIG['APP_DIR'];
 $DATA_DIR = $CONFIG['DATA_DIR'];
