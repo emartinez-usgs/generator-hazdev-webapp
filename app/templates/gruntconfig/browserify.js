@@ -38,8 +38,8 @@ var browerify = {
 
   // the bundle of test suites
   test: {
-    src: [config.test + '/test.js'],
-    dest: config.build + '/' + config.test + '/test.js'
+    src: [config.test + '/js/test.js'],
+    dest: config.build + '/' + config.test + '/js/test.js'
   }
 };
 
