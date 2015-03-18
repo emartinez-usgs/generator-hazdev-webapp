@@ -52,8 +52,8 @@ describe('hazdev-webapp generator', function () {
       'src/lib/pre-install',
       'src/lib/uninstall',
 
-      'test/index.html',
-      'test/index.js'
+      'test/test.html',
+      'test/test.js'
     ];
 
     helpers.mockPrompt(this.app, {
