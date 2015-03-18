@@ -52,7 +52,6 @@ describe('hazdev-webapp generator', function () {
       'src/lib/pre-install',
       'src/lib/uninstall',
 
-      'test/favicon.ico',
       'test/index.html',
       'test/index.js'
     ];
