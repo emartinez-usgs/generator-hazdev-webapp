@@ -1,10 +1,11 @@
-@import 'compass/css3';
+/*
+@import css dependencies
+@import scss partials
 
-* {
-	@include box-sizing(border-box);
-}
+Note: There should exist at most one SCSS file for each web addressable page
+in the application. Each SCSS file can import additional SCSS partials or CSS
+files. Raw CSS files should be reserved for third-party libraries that do not
+provide SCSS alternatives.
 
-h1 {
-	text-align:center;
-	color:#222;
-}
+This file probably has only a minimal ammount of selectors/styles.
+*/

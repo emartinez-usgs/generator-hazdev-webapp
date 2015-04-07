@@ -1,14 +1,14 @@
-require.config({
-	baseUrl: 'js',
-	paths: {
-	},
-	shim: {
-	}
-});
+'use strict';
 
-require([
-], function (
-) {
-	'use strict';
-	console.log('Framework Loaded');
+/*
+// Potential example...
+var App = require('App');
+
+App({
+  option1: 'value1',
+  option2: true,
+  option3: 'value3'
 });
+*/
+
+console.log('application running');

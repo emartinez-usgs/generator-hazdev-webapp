@@ -1,42 +1,42 @@
 {
-	"name": "generator-hazdev-webapp",
-	"version": "0.0.4",
-	"description": "A generator for Yeoman used by the USGS EHP HazDev team.",
-	"keywords": [
-		"yeoman-generator",
-		"usgs",
-		"usgs-ehp",
-		"usgs-ehp-hazdev"
-	],
-	"homepage": "https://github.com/emartinez-usgs/generator-hazdev-webapp",
-	"bugs": "https://github.com/emartinez-usgs/generator-hazdev-webapp/issues",
-	"author": {
-		"name": "Eric Martinez",
-		"email": "emartinez@usgs.gov",
-		"url": "https://github.com/emartinez-usgs"
-	},
-	"main": "app/index.js",
-	"repository": {
-		"type": "git",
-		"url": "git://github.com/emartinez-usgs/generator-hazdev-webapp.git"
-	},
-	"scripts": {
-		"test": "mocha"
-	},
-	"dependencies": {
-		"yeoman-generator": "~0.13.4",
-		"process": "~0.5.1",
-		"underscore.string": "~2.3.1"
-	},
-	"devDependencies": {
-		"mocha": "~1.10.0"
-	},
-	"engines": {
-		"node": ">=0.8.0"
-	},
-	"licenses": [
-		{
-			"type": "Public Domain"
-		}
-	]
+  "name": "generator-hazdev-webapp",
+  "version": "1.0.0",
+  "description": "A generator for Yeoman used by the USGS EHP HazDev team.",
+  "keywords": [
+    "yeoman-generator",
+    "usgs",
+    "usgs-ehp",
+    "usgs-ehp-hazdev"
+  ],
+  "homepage": "https://github.com/emartinez-usgs/generator-hazdev-webapp",
+  "bugs": "https://github.com/emartinez-usgs/generator-hazdev-webapp/issues",
+  "author": {
+    "name": "Eric Martinez",
+    "email": "emartinez@usgs.gov",
+    "url": "https://github.com/emartinez-usgs"
+  },
+  "main": "app/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/emartinez-usgs/generator-hazdev-webapp.git"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {
+    "process": "^0.5.2",
+    "underscore.string": "^2.3.3",
+    "yeoman-generator": "^0.13.4"
+  },
+  "devDependencies": {
+    "mocha": "^2.2.1"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "licenses": [
+    {
+      "type": "Public Domain"
+    }
+  ]
 }

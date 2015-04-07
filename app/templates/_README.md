@@ -2,3 +2,5 @@
 ==============
 
 <%= appDesc %>
+
+[License](License.md)
