@@ -23,13 +23,24 @@ var watch = {
     ]
   },
 
+  test: {
+    files: [
+      config.test + '/**/*'
+    ],
+    tasks: [
+      'jshint:test',
+      'concurrent:test'
+    ]
+  },
+
   scripts: {
     files: [
       config.src + '/htdocs/**/*.js'
     ],
     tasks: [
       'jshint:dev',
-      'browserify:index'
+      'browserify:index',
+      'browserify:bundle'
     ]
   },
 
