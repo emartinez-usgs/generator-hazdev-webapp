@@ -15,6 +15,7 @@ var concurrent = {
 
   test: [
     'browserify:test',
+    'browserify:bundle',
     'copy:test'
   ]
 };
