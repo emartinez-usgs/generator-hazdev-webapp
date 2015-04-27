@@ -87,6 +87,7 @@ var connect = {
     options: {
       base: [
         config.build + '/' + config.test,
+        config.build + '/' + config.src + '/htdocs',
         'node_modules' // primarily for mocha/chai
       ],
       open: 'http://localhost:' + config.testPort + '/test.html',
