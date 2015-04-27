@@ -1,4 +1,4 @@
-/*global describe, beforeEach, it*/
+/* global describe, beforeEach, it */
 'use strict';
 
 var path = require('path'),
@@ -26,6 +26,7 @@ describe('hazdev-webapp generator', function () {
       '.jshintrc',
       '.travis.yml',
       'Gruntfile.js',
+      'LICENSE.md',
       'package.json',
       'README.md',
 
@@ -44,7 +45,9 @@ describe('hazdev-webapp generator', function () {
       'gruntconfig/watch.js',
 
       'src/htdocs/css/index.scss',
+      'src/htdocs/css/_ExampleModule.scss',
       'src/htdocs/js/index.js',
+      'src/htdocs/js/ExampleModule.js',
       'src/htdocs/_config.inc.php',
       'src/htdocs/_navigation.inc.php',
       'src/htdocs/favicon.ico',
@@ -57,7 +60,8 @@ describe('hazdev-webapp generator', function () {
       'src/lib/uninstall',
 
       'test/js/test.js',
-      'test/test.html',
+      'test/spec/ExampleModuleTest.js',
+      'test/test.html'
     ];
 
     helpers.mockPrompt(this.app, {

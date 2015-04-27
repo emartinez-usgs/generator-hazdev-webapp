@@ -2,13 +2,15 @@
 
 var config = require('./config');
 
+var CWD = process.cwd();
+
 // List individual modules here. Each listed module will be aliased in the
 // "bundle", and will be set as an external in the "test".
 var EXPORTS = [
-  // config.src + '/htdocs/js/package/Class.js:package/Class'
+  CWD + '/' + config.src + '/htdocs/js/ExampleModule.js:ExampleModule'
 ];
-// Subsequent source files can then require "Class" with:
-// var Class = require('package/Class');
+// Subsequent source files can then require "ExampleModule" with:
+// var ExampleModule = require('package/ExampleModule');
 
 var browerify = {
   options: {
@@ -30,7 +32,7 @@ var browerify = {
   // the bundle used by tests
   bundle: {
     src: [],
-    dest: config.build + '/' + config.src + '/bundle.js',
+    dest: config.build + '/' + config.src + '/htdocs/js/bundle.js',
     options: {
       alias: EXPORTS
     }
