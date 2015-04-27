@@ -40,7 +40,8 @@ module.exports = function (grunt) {
   grunt.registerTask('dist', [
     'build',
     'configureProxies:dist',
-    'connect:dist'
+    'connect:template',
+    'connect:dist:keepAlive'
   ]);
 
   // runs tests against development version of library
