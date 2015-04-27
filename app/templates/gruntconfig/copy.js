@@ -11,7 +11,11 @@ var copy = {
       '**/*',
       '!**/*.scss',
       '!**/*.js'
-    ]
+    ],
+    filter: 'isFile',
+    options: {
+      mode: true
+    }
   },
 
   dist: {
@@ -28,7 +32,11 @@ var copy = {
       'htdocs/*.php',
 
       'lib/**/*'
-    ]
+    ],
+    filter: 'isFile',
+    options: {
+      mode: true
+    }
   },
 
   test: {

@@ -20,7 +20,11 @@ module.exports = function (grunt) {
   // default task useful during development
   grunt.registerTask('default', [
     'dev',
-    'test',
+
+    'jshint:test',
+    'concurrent:test', // browserify:test, copy:test
+    'connect:test',
+    'mocha_phantomjs'
 
     'configureProxies:dev',
     'connect:data',
@@ -40,11 +44,14 @@ module.exports = function (grunt) {
   grunt.registerTask('dist', [
     'build',
     'configureProxies:dist',
-    'connect:dist'
+    'connect:template',
+    'connect:dist:keepAlive'
   ]);
 
   // runs tests against development version of library
   grunt.registerTask('test', [
+    'dev',
+
     'jshint:test',
     'concurrent:test', // browserify:test, copy:test
     'connect:test',
