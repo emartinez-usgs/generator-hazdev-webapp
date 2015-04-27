@@ -6,7 +6,7 @@ var _ = require('underscore.string');
 
 
 var HazdevWebappGenerator = module.exports = function HazdevWebappGenerator (
-    args, options, config) {
+    args, options/*, config*/) {
   yeoman.generators.Base.apply(this, arguments);
 
   this.on('end', function () {
@@ -79,7 +79,7 @@ HazdevWebappGenerator.prototype.askForMore = function askForMore () {
         type: 'git',
         url: '' + props.appRepo
       };
-      this.appRepoInfo = "\n\t\"repository\": " +
+      this.appRepoInfo = '\n\t"repository": ' +
           JSON.stringify(appRepo) + ',';
 
       cb();
@@ -128,6 +128,7 @@ HazdevWebappGenerator.prototype.staticfiles = function staticfiles () {
   this.copy('jshintrc', '.jshintrc');
   this.copy('travis.yml', '.travis.yml');
   this.copy('Gruntfile.js', 'Gruntfile.js');
+  this.copy('LICENSE.md', 'LICENSE.md');
 
 
   // Files for initial application skeleton
@@ -136,9 +137,12 @@ HazdevWebappGenerator.prototype.staticfiles = function staticfiles () {
   this.copy('src/htdocs/_config.inc.php','src/htdocs/_config.inc.php');
   this.copy('src/htdocs/_navigation.inc.php','src/htdocs/_navigation.inc.php');
   this.copy('src/htdocs/css/index.scss', 'src/htdocs/css/index.scss');
+  this.copy('src/htdocs/css/_ExampleModule.scss',
+      'src/htdocs/css/_ExampleModule.scss');
   this.copy('src/htdocs/favicon.ico', 'src/htdocs/favicon.ico');
   this.copy('src/htdocs/index.php', 'src/htdocs/index.php');
   this.copy('src/htdocs/js/index.js', 'src/htdocs/js/index.js');
+  this.copy('src/htdocs/js/ExampleModule.js', 'src/htdocs/js/ExampleModule.js');
 
   this.copy('src/lib/configure.php', 'src/lib/configure.php');
   this.copy('src/lib/install-funcs.inc.php','src/lib/install-funcs.inc.php');
@@ -150,4 +154,5 @@ HazdevWebappGenerator.prototype.staticfiles = function staticfiles () {
   // Files for testing
   this.copy('test/test.html', 'test/test.html');
   this.copy('test/js/test.js', 'test/js/test.js');
+  this.copy('test/spec/ExampleModuleTest.js', 'test/spec/ExampleModuleTest.js');
 };
