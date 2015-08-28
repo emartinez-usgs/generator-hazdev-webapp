@@ -11,23 +11,23 @@ Getting started
 ---------------
 
 - Install dependencies:
-  ```
-  npm install -g yo generator-hazdev-webapp
-  ```
+
+        npm install -g yo generator-hazdev-webapp
+
 - Create a project:
-  ```
-  mkdir project
-  cd project
-  yo hazdev-webapp
-  ```
+
+        mkdir project
+        cd project
+        yo hazdev-webapp
+
 - Initialize your repository
-  ```
-  git init
-  git add .gitignore
-  git commit -m 'Set list of files to ignore.'
-  git add --all
-  git commit -m 'Initial project scaffolding.'
-  ```
+
+        git init
+        git add .gitignore
+        git commit -m 'Set list of files to ignore.'
+        git add --all
+        git commit -m 'Initial project scaffolding.'
+
 
 
 Road Map
